@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --green-bg: hsl(102, 57%, 30%);
+    --yellow-bg: hsl(17, 52%, 39%);
+    --grey-bg: hsl(269, 51%, 26%);
+  }
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins','sans-serif';
+}
+.bg-s{
+    border-radius: 5px;
+    
+}
+.card{
+    background: #fff;
+}
+.card-header{
+    background-color:hsl(102, 57%, 30%) ;
+}
+.card-header h2{
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    
+}
+
+.word{
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 24px;
+    text-transform: uppercase;
+    margin: auto;
+    border: 1px solid black ;
+    border-radius: 5px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+
+}
+.buttons button{
+    border: none;
+    outline: none;
+    width: calc(48%);
+    padding: 15px 0;
+    border-radius: 5px;
+}
+.buttons .refresh-word{
+    background: #6c757d;
+}
+
+.buttons .check-word{
+    background: #5372F0;
+}
+
+
+#heading {
+    display: flex;
+    justify-content: center;
+    padding: 1em 0.5em;
+    gap: 0.25em;
+    margin-bottom: 2em;
+  }
+  
+  .heading-letter {
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 2em;
+    display: grid;
+    place-content: center;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px black;
+  }
+  
+  .heading-letter:nth-child(even) {
+    position: relative;
+    top: 4px;
+  }
+  
+  .heading-letter:nth-child(odd) {
+    position: relative;
+    bottom: 4px;
+  }
+  
+  .heading-letter:nth-child(1),
+  .heading-letter:nth-child(4),
+  .heading-letter:nth-child(7) {
+    background-color: var(--green-bg);
+  }
+  
+  .heading-letter:nth-child(2),
+  .heading-letter:nth-child(5),
+  .heading-letter:nth-child(8) {
+    background-color: var(--yellow-bg);
+  }
+  
+  .heading-letter:nth-child(3),
+  .heading-letter:nth-child(6),
+  .heading-letter:nth-child(9) {
+    background-color: var(--grey-bg);
+  }
+  
